@@ -1,4 +1,5 @@
 import math
+import random
 class Board:
     def __init__(self,size):
         self.size = size
@@ -43,3 +44,6 @@ class Board:
                         bestScore = score
                         best = (row, col)
         self.move(best[0],best[1])
+
+    def miniMax(self):
+        return 1-2*random.randint(0,1) #todo: implement minimax
