@@ -12,7 +12,7 @@ class Game:
             col = int(input("column: "))
         self.board.move(row-1,col-1)
         self.board.printBoard()
-    def begin(self):
+    def console_begin(self):
         a = ""
         while (a!='y' and a!='n'):
             a = input("Do you want to play first? y/n")
@@ -27,3 +27,5 @@ class Game:
             else:
                 self.userPlays()
         print("done")
+    def guiBegin():
+        pass

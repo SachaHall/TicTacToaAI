@@ -68,7 +68,7 @@ class Board:
                             bestScore = score
                             best = (row, col)
         self.move(best[0],best[1])
-        #print(bestScore)
+        return best
 
     def miniMax(self, depth, maxiTurn):
         state = self.evaluateBoard()
